@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns:voxeo="http://community.voxeo.com/xmlns/vxml">
+
+	<form id="F1">
+		<property name="recordutterance" value="true"/>
+		<field name="F_1">
+			<prompt>
+English prompt.
+			</prompt>
+
+			<prompt xml:lang="it-it">
+Messaggio in italiano.
+			</prompt>
+
+			<filled>
+				<log expr="F_1$.utterance" label="filled"/>
+				<prompt>
+filled <value expr="F_1"/>
+				</prompt>
+			</filled>
+			<noinput>
+				<log expr="F_1$.utterance" label="noinput"/>
+				<prompt>
+noinput <value expr="F_1"/>
+				</prompt>
+			</noinput>
+			<nomatch>
+				<log expr="F_1$.utterance" label="nomatch"/>
+				<prompt>
+nomatch <value expr="F_1"/>
+				</prompt>
+			</nomatch>
+			<error>
+				<log expr="F_1$.utterance" label="error"/>
+				<prompt>
+error <value expr="F_1"/>
+				</prompt>
+			</error>
+		</field>
+	</form>
+</vxml>
