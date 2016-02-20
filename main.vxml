@@ -3,7 +3,15 @@
 
 	<form id="F1">
 		<property name="recordutterance" value="true"/>
-		<field name="F_1" type="number">
+		<field name="F_1">
+			<grammar xml:lang="it-it" version="1.0" root="myrule" mode="voice">
+				<rule id="myrule">
+					<item>
+						Grammatica.
+					</item>
+				</rule>
+			</grammar>
+
 			<prompt xml:lang="it-it">
 Messaggio in italiano.
 			</prompt>
