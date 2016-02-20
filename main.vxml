@@ -9,22 +9,24 @@ Messaggio in italiano.
 			</prompt>
 
 			<filled>
-				<log expr="'****' F_1$.utterance" label="filled"/>
+				<log expr="F_1$.utterance" label="filled"/>
 				<prompt xml:lang="it-it">
 filled: <value expr="F_1"/>.
-utterance: <value expr="F_1$.utterance"/>
+utterance: <value expr="application.lastresult$.recording"/>
 				</prompt>
 			</filled>
 			<noinput>
 				<log expr="F_1$.utterance" label="noinput"/>
 				<prompt>
-noinput <value expr="F_1"/>
+noinput
+utterance: <value expr="F_1$.utterance"/>
 				</prompt>
 			</noinput>
 			<nomatch>
 				<log expr="F_1$.utterance" label="nomatch"/>
 				<prompt>
-nomatch <value expr="F_1"/>
+nomatch
+utterance: <value expr="F_1$.utterance"/>
 				</prompt>
 			</nomatch>
 			<error>
