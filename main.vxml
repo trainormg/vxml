@@ -4,10 +4,6 @@
 	<form id="F1">
 		<property name="recordutterance" value="true"/>
 		<field name="F_1" type="number">
-			<prompt>
-English prompt.
-			</prompt>
-
 			<prompt xml:lang="it-it">
 Messaggio in italiano.
 			</prompt>
@@ -31,9 +27,8 @@ nomatch <value expr="F_1"/>
 				</prompt>
 			</nomatch>
 			<error>
-				<log expr="F_1$.utterance" label="error"/>
 				<prompt>
-error <value expr="F_1"/>
+error
 				</prompt>
 			</error>
 		</field>
