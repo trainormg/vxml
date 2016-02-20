@@ -3,7 +3,7 @@
 
 	<form id="F1">
 		<property name="recordutterance" value="true"/>
-		<field name="F_1">
+		<field name="F_1" type="number">
 			<prompt>
 English prompt.
 			</prompt>
