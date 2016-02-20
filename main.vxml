@@ -12,7 +12,8 @@ Messaggio in italiano.
 				<log expr="F_1$.utterance" label="filled"/>
 				<prompt xml:lang="it-it">
 filled: <value expr="F_1"/>.
-utterance: <value expr="application.lastresult$.recording"/>
+<!-- value expr="application.lastresult$.recording"/ -->
+utterance: <value expr="F_1$.utterance"/>
 				</prompt>
 			</filled>
 			<noinput>
