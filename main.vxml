@@ -9,9 +9,10 @@ Messaggio in italiano.
 			</prompt>
 
 			<filled>
-				<log expr="F_1$.utterance" label="filled"/>
-				<prompt>
-filled <value expr="F_1"/>
+				<log expr="'****' F_1$.utterance" label="filled"/>
+				<prompt xml:lang="it-it">
+filled: <value expr="F_1"/>.
+utterance: <value expr="F_1$.utterance"/>
 				</prompt>
 			</filled>
 			<noinput>
@@ -27,8 +28,8 @@ nomatch <value expr="F_1"/>
 				</prompt>
 			</nomatch>
 			<error>
-				<prompt>
-error
+				<prompt xml:lang="it-it">
+Errore.
 				</prompt>
 			</error>
 		</field>
